@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_scan"
+    app:startDestination="@id/fragment_1">
+
+    <fragment
+        android:id="@+id/fragment_1"
+        android:name="com.minorfish.car.twoth.ui.weight.FragmentW1"
+        android:label="fragment_1"
+        tools:layout="@layout/fragment2" >
+
+        <action
+            android:id="@+id/nav_action_w_1to2"
+            app:destination="@+id/fragment_2"
+            app:popEnterAnim="@anim/in_from_left"
+            app:popExitAnim="@anim/out_to_right"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/out_to_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_2"
+        android:name="com.minorfish.car.twoth.ui.weight.FragmentW2"
+        android:label="fragment_2"
+        tools:layout="@layout/fragment5"  >
+
+        <action
+            android:id="@+id/nav_action_w_2to3"
+            app:destination="@+id/fragment_3"
+            app:popEnterAnim="@anim/in_from_left"
+            app:popExitAnim="@anim/out_to_right"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/out_to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_3"
+        android:name="com.minorfish.car.twoth.ui.weight.FragmentW3"
+        android:label="fragment_3"
+        tools:layout="@layout/fragment6"  >
+    </fragment>
+</navigation>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xml_main_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:text="垃圾重量"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:minWidth="600dp"
+            android:layout_height="108dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/xml_et_white_bg">
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
+                android:focusable="false"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"
+                android:minWidth="46dp"
+                android:textColor="@color/black"
+                android:text="0.0"
+                android:textSize="@dimen/sp44"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:gravity="center_vertical|end" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:paddingLeft="4dp"
+                android:paddingStart="4dp"
+                android:focusable="false"
+                android:text="kg"
+                android:textColor="@color/black70"
+                android:textSize="19sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:gravity="bottom" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvZero"
+            android:text="置零"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp26"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:minHeight="55dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_btn_selector" />
+
+        <TextView
+            android:id="@+id/tvValue"
+            android:text="截取数值"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp26"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:minHeight="55dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_btn_selector" />
+
+        <TextView
+            android:id="@+id/tvAgain"
+            android:text="重新称重"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp26"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:minHeight="55dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_btn_selector" />
+
+        <TextView
+            android:id="@+id/tvNext"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp26"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:minHeight="55dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_btn_selector" />
+
+    </LinearLayout>
+
+</LinearLayout>

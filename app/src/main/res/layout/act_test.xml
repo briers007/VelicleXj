@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:text="SCAN"/>
+
+        <Button
+            android:id="@+id/btnJz"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:text="校准"/>
+
+        <Button
+            android:id="@+id/btnJz2"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:text="放置砝码"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

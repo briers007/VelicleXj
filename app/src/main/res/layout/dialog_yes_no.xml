@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_dialog_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp24"
+        android:drawableStart="@drawable/icon_tip"
+        android:layout_gravity="center_horizontal"
+        android:text="提示"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_margin="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btOk"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:minWidth="120dp"
+                android:text="继续"
+                android:textColor="@color/black90"
+                android:layout_marginEnd="14dp"
+                android:textSize="@dimen/sp24"
+                android:background="@drawable/bg_btn_selector"/>
+
+            <Button
+                android:id="@+id/btCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:minWidth="120dp"
+                android:text="取消"
+                android:layout_marginStart="14dp"
+                android:textColor="@color/black90"
+                android:textSize="@dimen/sp24"
+                android:background="@drawable/bg_btn_selector2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

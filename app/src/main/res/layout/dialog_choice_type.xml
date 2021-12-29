@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="630dp"
+    android:background="@drawable/ic_dialog_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp24"
+        android:text="选择类型"
+        android:textColor="@color/white"
+        android:paddingStart="20dp"
+        android:gravity="center"/>
+
+    <com.minorfish.car.twoth.ui.boxout.RvType
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="300dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnAll"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:text="全选"
+            android:textSize="@dimen/sp22"
+            android:background="@drawable/bg_btn_selector2"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical|end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_btn_selector2"
+                android:text="取消"
+                android:textSize="@dimen/sp22" />
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="center_vertical"
+                android:text="确定"
+                android:textSize="@dimen/sp22"
+                android:background="@drawable/bg_btn_selector"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
